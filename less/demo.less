@@ -1,0 +1,61 @@
+@import "nSlider.less";
+@import "style.less";
+.demo-page {
+    background: #f7f7f7;
+    position:relative;
+    .slide-info {
+        position:absolute;
+    }
+    .slide-container {
+        .main-slide {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 15px;
+           
+            .nslide-indicator {
+                position: absolute;
+                bottom: 7px;
+                width: 100%;
+            }
+        }
+        .small-slide {
+            margin-top:15px;
+            width: 100%;
+            overflow:hidden;
+            li {
+                position: relative;
+                .remove {
+                    position: absolute;
+                    width: 35px;
+                    height: 35px;
+                    text-align: center;
+                    font-size: 28px;
+                    text-decoration: none !important;
+                    top: 3px;
+                    color: #222;
+                    vertical-align: bottom;
+                    border-radius: 50%;
+                    line-height: 37px;
+                    right: 3px;
+                    display: none;
+                }
+                &:hover {
+                    .remove {
+                        transition: all .4s;
+                        display: block;
+                        background: rgba(255, 255, 255, 0.44);
+                    }
+                }
+            }
+        }
+        .slide-more-options {
+            margin-top: 10px;
+            .n-btn {
+                border:none;
+                outline: none;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
